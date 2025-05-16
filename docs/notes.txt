@@ -1,0 +1,17 @@
+Modules:
+
+1. parser.c
+   - Parse text commands into structs
+
+2. joint.c
+   - Track and update angles for J1, J2, J3
+   - Range: -90 to +90
+
+3. arm.c
+   - Accepts parsed command
+   - Routes to joint updates
+   - Handles errors
+
+4. hardware.c (optional)
+   - Fake hardware layer
+   - Used for mocking behavior in tests
